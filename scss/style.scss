@@ -1,0 +1,113 @@
+@import "./variables";
+@import "./mixin";
+@import "./inicio/inicio";
+@import "./clases/clases";
+@import "./productos/productos";
+@import "./nosotros/nosotros";
+@import "./contacto/contacto";
+
+* {
+    margin: 0!important;
+    padding: 0!important;
+    box-sizing: border-box!important;
+    overflow-x: hidden!important;
+}
+
+
+
+element.style {
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100%!important;
+}
+
+@media (max-width: 1200px){
+    #extrasM{
+        height: 95vh;
+    }
+}
+
+
+@media (max-width: 991px){  
+    .navbar-brand {
+        justify-content: start;
+    }
+    main{
+        height: auto;
+    }
+    #sectionUno{
+        height: auto;
+    }
+    #sectionDos{
+        height: auto;
+    }
+    #nosotrosM{
+        height: 90vh;
+    }
+    #mainNosotros {
+        height: auto;
+    }
+    .nav-link{
+        padding: 10px;
+    }
+    #formularioN{
+        height: auto;
+    }
+    #extrasM{
+        height: auto;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    header nav .navbar-nav{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        align-items: flex-end;
+    }
+    .navbar-brand {
+        padding-left: 12px;
+    }
+    .nav-link{
+        padding: 5px;
+    }
+
+    #mainNosotros{
+        form{
+            #comentarioF{
+                width: auto!important;
+                padding-right: 2rem!important;
+            }  
+        }
+    }
+}   
+
+@media (max-width: 576px){
+    // header{
+    //     height: auto;
+    // }
+    // main{
+    //     height: auto;
+    // }
+    // #sectionUno{
+    //     height: auto;
+    // }
+    // #sectionDos{
+    //     height: auto;
+    // }
+    .nav-link{
+        padding: 3px;
+    }
+    #turnosWeb{
+        justify-content: center;
+        align-items: center;
+        div{
+            align-items: center;
+        };
+    }
+}
